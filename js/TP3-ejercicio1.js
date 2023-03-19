@@ -15,3 +15,4 @@ for (index = 0; index < months.length; index++) {
 
 document.write("</ul>")
 
+
