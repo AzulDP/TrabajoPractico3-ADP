@@ -39,11 +39,41 @@ for (let index = 0; index < 11; index++) {
    let city = prompt('Ingrese una ciudad');
    cities.push(city);
    if (city === null) {break;}{
-       document.write(`<li>${cities[index] + " "}</li><br>`);
-    }
+       document.write(`<li>${cities[index]}</li><br>`);
+         }
 }
 // for (let index = 0; index < city.length; index++);
 
 document.write("</ul>");
 
+// Mostrar la longitud del arreglo.
+console.log(cities.length);
 
+// Mostrar en el documento web los ítems de las posiciones primera, tercera y última.
+document.write(`<li>${cities.slice(0,3,-1)+ " "}</li><br>`);
+
+// [cities.length -1]
+
+// Añade en última posición la ciudad de París.
+cities.push("Paris");
+
+for (let index = 0; index < 11; index++) {
+    let city = prompt('Ingrese una ciudad');
+    cities.push(city);
+    if (city === null) {break;}{
+        document.write(`<li>${cities[index]}</li><br>`);
+          }
+ }
+// Escribe por pantalla el elemento que ocupa la segunda posición.
+document.write(`<li>La segunda ciudad es ${cities[1]}</li><br>`);
+
+// Sustituye el elemento que ocupa la segunda posición por la ciudad de 'Barcelona'.
+
+cities[1] = "Barcelona";
+for (let index = 0; index < 11; index++) {
+    let city = prompt('Ingrese una ciudad');
+    cities.push(city);
+    if (city === null) {break;}{
+        document.write(`<li>${cities[index]}</li><br>`);
+          }
+ }
