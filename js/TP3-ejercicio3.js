@@ -43,16 +43,16 @@ document.write(`<p>Tu tirada suma ${suma} ( ${dado1} ${dado2}) <br></p>`);
 
 // apariciones
 
-// for (apariciones =2; apariciones < 13 ; apariciones++) {
-// count = 0;
-// if (suma = apariciones) {
-//     count = count+1;
-// }
-// document.write(`La suma ${suma} aparece ${apariciones} veces.`)
-// }
+for (apariciones =2; apariciones < 13 ; apariciones++) {
+count = 0;
+if (suma = apariciones) {
+    count = count+1;
+}
+document.write(`La suma ${suma} aparece ${apariciones} veces.`)
+}
 
-// for (tiradas2= 0; tiradas2 < 51; tiradas2++) {
-// }
+for (tiradas2= 0; tiradas2 < 51; tiradas2++) {
+}
 
 
 // document.write('<table><tbody>')

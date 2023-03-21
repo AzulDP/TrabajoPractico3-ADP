@@ -49,15 +49,14 @@ document.write("</ul>");
 // Mostrar la longitud del arreglo.
 console.log(cities.length);
 
+cities.push("Paris");
+document.write(`<li>${cities[cities.length-1]}</li><br>`);
 // Mostrar en el documento web los ítems de las posiciones primera, tercera y última.
 document.write(`<li>El elemento en primera posición es ${cities[0]}</li><br>`);
 document.write(`<li>El elemento en tercera posición es ${cities[2]}</li><br>`);
 document.write(`<li>El elemento en última posición es ${cities[cities.length-1]}</li><br>`);
 
-
 // Añade en última posición la ciudad de París.
-cities.push("Paris");
-        document.write(`<li>${cities[index]}</li><br>`);
 
 // Escribe por pantalla el elemento que ocupa la segunda posición.
 document.write(`<li>La segunda ciudad es ${cities[1]}</li><br>`);
