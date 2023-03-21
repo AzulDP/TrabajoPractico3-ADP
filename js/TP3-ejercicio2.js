@@ -50,31 +50,19 @@ document.write("</ul>");
 console.log(cities.length);
 
 // Mostrar en el documento web los ítems de las posiciones primera, tercera y última.
-document.write(`<li>El elemento en primera posición es ${cities[0]+ " "}</li><br>`);
-document.write(`<li>El elemento en tercera posición es ${cities[2]+ " "}</li><br>`);
-document.write(`<li>El elemento en última posición es ${cities.length[-1]+ " "}</li><br>`);
+document.write(`<li>El elemento en primera posición es ${cities[0]}</li><br>`);
+document.write(`<li>El elemento en tercera posición es ${cities[2]}</li><br>`);
+document.write(`<li>El elemento en última posición es ${cities[cities.length-1]}</li><br>`);
 
 
 // Añade en última posición la ciudad de París.
-let citiesParis = cities
-citiesParis.push("Paris");
-for (let index = 0; index < 11; index++) {
-    let city = prompt('Ingrese una ciudad');
-    cities.push(city);
-    if (city === null) {break;}{
+cities.push("Paris");
         document.write(`<li>${cities[index]}</li><br>`);
-          }
- }
+
 // Escribe por pantalla el elemento que ocupa la segunda posición.
-document.write(`<li>La segunda ciudad es ${citiesParis[1]}</li><br>`);
+document.write(`<li>La segunda ciudad es ${cities[1]}</li><br>`);
 
 // Sustituye el elemento que ocupa la segunda posición por la ciudad de 'Barcelona'.
 
-citiesParis[1] = "Barcelona";
-for (let index = 0; index < 11; index++) {
-    let city = prompt('Ingrese una ciudad');
-    cities.push(city);
-    if (city === null) {break;}{
-        document.write(`<li>${citiesParis[index]}</li><br>`);
-          }
- }
+cities[1] = "Barcelona";
+        document.write(`<li>${cities[index]}</li><br>`);
